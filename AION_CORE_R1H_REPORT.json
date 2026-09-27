@@ -1,0 +1,95 @@
+{
+  "version": "AION-CORE-V1-INDEX-PRECISION-R1H",
+  "strategy": "M15 trend -> M5 pullback/resume -> M1 break",
+  "markets": [
+    "US100",
+    "US500",
+    "US30",
+    "DE40",
+    "FR40"
+  ],
+  "started_utc": "2026-09-26T01:51:48.701092+00:00",
+  "ended_utc": "2026-09-26T02:51:48.712017+00:00",
+  "requested_minutes": 60.0,
+  "cycles": 173,
+  "closed": 0,
+  "wins": 0,
+  "losses": 0,
+  "flats": 0,
+  "win_rate_pct": null,
+  "net_r": 0,
+  "avg_r": null,
+  "best_r": null,
+  "worst_r": null,
+  "decision_reasons": {
+    "M15_NO_TREND": 68,
+    "SPREAD": 435,
+    "M5_NO_PULLBACK_RESUME": 237,
+    "M1_NO_TRIGGER": 85,
+    "RISK_TOO_WIDE": 20
+  },
+  "by_symbol": {
+    "US100": {
+      "closed": 0,
+      "net_r": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    "US500": {
+      "closed": 0,
+      "net_r": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    "US30": {
+      "closed": 0,
+      "net_r": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    "DE40": {
+      "closed": 0,
+      "net_r": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    "FR40": {
+      "closed": 0,
+      "net_r": 0,
+      "wins": 0,
+      "losses": 0
+    }
+  },
+  "errors": [
+    "US500: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US500 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "positions: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Max retries exceeded with url: /api/v1/positions (Caused by NameResolutionError(\"HTTPSConnection(host='demo-api-capital.backend-capital.com', port=443): Failed to resolve 'demo-api-capital.backend-capital.com' ([Errno 7] No address associated with hostname)\"))",
+    "US100: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Max retries exceeded with url: /api/v1/markets/US100 (Caused by NameResolutionError(\"HTTPSConnection(host='demo-api-capital.backend-capital.com', port=443): Failed to resolve 'demo-api-capital.backend-capital.com' ([Errno 7] No address associated with hostname)\"))",
+    "US500: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Max retries exceeded with url: /api/v1/markets/US500 (Caused by NameResolutionError(\"HTTPSConnection(host='demo-api-capital.backend-capital.com', port=443): Failed to resolve 'demo-api-capital.backend-capital.com' ([Errno 7] No address associated with hostname)\"))",
+    "US30: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Max retries exceeded with url: /api/v1/markets/US30 (Caused by NameResolutionError(\"HTTPSConnection(host='demo-api-capital.backend-capital.com', port=443): Failed to resolve 'demo-api-capital.backend-capital.com' ([Errno 7] No address associated with hostname)\"))",
+    "DE40: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Max retries exceeded with url: /api/v1/markets/DE40 (Caused by NameResolutionError(\"HTTPSConnection(host='demo-api-capital.backend-capital.com', port=443): Failed to resolve 'demo-api-capital.backend-capital.com' ([Errno 7] No address associated with hostname)\"))",
+    "FR40: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Max retries exceeded with url: /api/v1/markets/FR40 (Caused by NameResolutionError(\"HTTPSConnection(host='demo-api-capital.backend-capital.com', port=443): Failed to resolve 'demo-api-capital.backend-capital.com' ([Errno 7] No address associated with hostname)\"))",
+    "US500: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US500 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US500: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US500 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US500: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US500 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US100: ConnectionError: HTTPSConnectionPool(host='demo-api-capital.backend-capital.com', port=443): Read timed out.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -.",
+    "US30: CapitalAPIError: POST /api/v1/positions HTTP 400: Rejected. US30 is currently closed. Timetable in place: UTC; Mon - 21:00, 21:05 -; Tue - 21:00, 21:05 -; Wed - 21:00, 21:05 -; Thu - 21:00, 21:05 -; Fri - 21:00; Sun 22:00 -."
+  ],
+  "rules": {
+    "rr": 1.5,
+    "max_hold_min": 45,
+    "spread_atr_max": 0.6,
+    "global_position_cap": null,
+    "per_symbol_cap": 1,
+    "time_filter": false
+  },
+  "results_zip": "AION_CORE_R1H_RESULTS_20260926_025148.zip"
+}
